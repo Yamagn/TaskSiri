@@ -7,11 +7,10 @@
 //
 
 import UIKit
-import RealmSwift
 
 class DetailViewController: UIViewController {
-    let realm = try! Realm()
     var task: Task?
+    let taskCtrl = TaskController()
     @IBOutlet weak var taskNameLabel: UILabel!
     @IBOutlet weak var deleteButton: UIButton!
     
@@ -26,10 +25,8 @@ class DetailViewController: UIViewController {
     }
     
     @IBAction func deleteTask(_ sender: Any) {
-        try! realm.write {
-            if let task = self.task {
-                realm.delete(task)
-            }
+        if let task = task {
+            taskCtrl.delete(task: task)
         }
         self.navigationController?.popViewController(animated: true)
     }

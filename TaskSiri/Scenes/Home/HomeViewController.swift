@@ -7,21 +7,18 @@
 //
 
 import UIKit
-import RealmSwift
 
 class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     let userDefaults = UserDefaults.standard
     var tasks: [Task] = []
-    
+    let taskCtrl = TaskController()
     var selectedTask: Task?
-    
-    let realm = try! Realm()
     
     @IBOutlet weak var tableView: UITableView!
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        let taskArray = realm.objects(Task.self)
+        let taskArray = taskCtrl.getAll()
         if taskArray.count != 0{
             tasks = []
             tasks += taskArray

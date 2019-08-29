@@ -7,13 +7,12 @@
 //
 
 import UIKit
-import RealmSwift
 
 class AddViewController: UIViewController {
     @IBOutlet weak var taskNameField: UITextField!
     @IBOutlet weak var addTaskButton: UIButton!
     
-    let realm = try! Realm()
+    let taskCtrl = TaskController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,10 +30,7 @@ class AddViewController: UIViewController {
         print(taskName)
         let newTask = Task()
         newTask.name = taskName
-        
-        try! realm.write {
-            self.realm.add(newTask)
-        }
+        self.taskCtrl.add(newTask: newTask)
         
         dismiss(animated: true)
     }
