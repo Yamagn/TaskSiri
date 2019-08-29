@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tYq-7t-gcV">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Add View Controller-->
+        <scene sceneID="od3-CM-MLt">
+            <objects>
+                <viewController id="tYq-7t-gcV" customClass="AddViewController" customModule="TaskSiri" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GAN-0r-YZD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="タスク名を入力" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="mwN-uE-XHX">
+                                <rect key="frame" x="99" y="275" width="215" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i4a-qI-6e6">
+                                <rect key="frame" x="99" y="470" width="215" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="jv3-lt-QAs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="タスクを追加">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="addTask:" destination="tYq-7t-gcV" eventType="touchUpInside" id="DMS-0O-TAz"/>
+                                </connections>
+                            </button>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Bt-8W-ctg">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <items>
+                                    <navigationItem title="タスクを追加する" id="tP6-W8-8tr">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="stop" id="9Ox-9s-Ylc">
+                                            <connections>
+                                                <action selector="closeModal:" destination="tYq-7t-gcV" id="IHC-qm-UK8"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lNY-58-cKH">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <color key="backgroundColor" red="0.97617071866989136" green="0.9763374924659729" blue="0.97616022825241089" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="1eh-SQ-Ky2"/>
+                                    <constraint firstAttribute="width" constant="414" id="vmk-Ko-9xK"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1Bt-8W-ctg" firstAttribute="top" secondItem="lNY-58-cKH" secondAttribute="bottom" id="05h-NM-FKd"/>
+                            <constraint firstItem="1Bt-8W-ctg" firstAttribute="leading" secondItem="8hv-a6-j7J" secondAttribute="leading" id="3fY-vr-lma"/>
+                            <constraint firstItem="mwN-uE-XHX" firstAttribute="leading" secondItem="8hv-a6-j7J" secondAttribute="leading" constant="99" id="5RC-1e-9y9"/>
+                            <constraint firstItem="i4a-qI-6e6" firstAttribute="leading" secondItem="8hv-a6-j7J" secondAttribute="leading" constant="99" id="9Ym-2K-nDi"/>
+                            <constraint firstItem="8hv-a6-j7J" firstAttribute="trailing" secondItem="i4a-qI-6e6" secondAttribute="trailing" constant="100" id="FdR-FM-ebp"/>
+                            <constraint firstItem="1Bt-8W-ctg" firstAttribute="trailing" secondItem="8hv-a6-j7J" secondAttribute="trailing" id="MhI-ke-U8E"/>
+                            <constraint firstItem="1Bt-8W-ctg" firstAttribute="top" secondItem="lNY-58-cKH" secondAttribute="bottom" id="N29-UF-S1d"/>
+                            <constraint firstItem="8hv-a6-j7J" firstAttribute="trailing" secondItem="mwN-uE-XHX" secondAttribute="trailing" constant="100" id="Olo-Mf-YpY"/>
+                            <constraint firstAttribute="trailing" secondItem="lNY-58-cKH" secondAttribute="trailing" id="YTt-FP-jz7"/>
+                            <constraint firstItem="8hv-a6-j7J" firstAttribute="bottom" secondItem="i4a-qI-6e6" secondAttribute="bottom" constant="352" id="csL-qC-X3F"/>
+                            <constraint firstItem="lNY-58-cKH" firstAttribute="top" secondItem="GAN-0r-YZD" secondAttribute="top" id="ntk-J0-ABg"/>
+                            <constraint firstItem="i4a-qI-6e6" firstAttribute="top" secondItem="mwN-uE-XHX" secondAttribute="bottom" constant="165" id="xvQ-fE-ROX"/>
+                            <constraint firstItem="lNY-58-cKH" firstAttribute="leading" secondItem="GAN-0r-YZD" secondAttribute="leading" id="z8g-Jg-ThT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8hv-a6-j7J"/>
+                    </view>
+                    <toolbarItems/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="addTaskButton" destination="i4a-qI-6e6" id="8cy-QT-O5h"/>
+                        <outlet property="taskNameField" destination="mwN-uE-XHX" id="8mz-wm-fku"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3je-jq-YFS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-178.2608695652174" y="87.723214285714278"/>
+        </scene>
+    </scenes>
+</document>

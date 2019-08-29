@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ec8-Nf-oSv">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Detail View Controller-->
+        <scene sceneID="09l-F7-LfB">
+            <objects>
+                <viewController id="Ec8-Nf-oSv" customClass="DetailViewController" customModule="TaskSiri" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="w9L-1p-8mh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TMv-cf-A84">
+                                <rect key="frame" x="110" y="327" width="193" height="47"/>
+                                <color key="backgroundColor" red="0.8980392157" green="0.31020607709999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="XBW-BM-6tT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="タスクを削除する">
+                                    <color key="titleColor" red="0.97617071870000005" green="0.97633749250000001" blue="0.97616022830000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="deleteTask:" destination="Ec8-Nf-oSv" eventType="touchUpInside" id="y2h-Fe-Ld2"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Task" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m24-uq-QeW">
+                                <rect key="frame" x="110" y="195" width="193" height="45"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="m24-uq-QeW" firstAttribute="top" secondItem="hBY-mI-ztA" secondAttribute="top" constant="195" id="BOb-5R-GAV"/>
+                            <constraint firstItem="TMv-cf-A84" firstAttribute="top" secondItem="m24-uq-QeW" secondAttribute="bottom" constant="87" id="Jzl-bh-fl4"/>
+                            <constraint firstItem="hBY-mI-ztA" firstAttribute="trailing" secondItem="m24-uq-QeW" secondAttribute="trailing" constant="111" id="LVK-Qz-vZu"/>
+                            <constraint firstItem="TMv-cf-A84" firstAttribute="top" secondItem="hBY-mI-ztA" secondAttribute="top" constant="327" id="McP-06-uMB"/>
+                            <constraint firstItem="m24-uq-QeW" firstAttribute="leading" secondItem="hBY-mI-ztA" secondAttribute="leading" constant="110" id="dED-KO-J8g"/>
+                            <constraint firstItem="hBY-mI-ztA" firstAttribute="trailing" secondItem="TMv-cf-A84" secondAttribute="trailing" constant="111" id="trg-kU-eQl"/>
+                            <constraint firstItem="TMv-cf-A84" firstAttribute="leading" secondItem="hBY-mI-ztA" secondAttribute="leading" constant="110" id="zbo-FM-gAP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hBY-mI-ztA"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="deleteButton" destination="TMv-cf-A84" id="i5s-WO-L4u"/>
+                        <outlet property="taskNameLabel" destination="m24-uq-QeW" id="Axd-Pw-ant"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="chb-Tg-DNq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="115.94202898550725" y="103.79464285714285"/>
+        </scene>
+    </scenes>
+</document>

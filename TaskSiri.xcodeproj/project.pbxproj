@@ -7,21 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		074191FA2314E6190070F7AC /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074191F92314E6190070F7AC /* TaskCell.swift */; };
+		07736DCB23176B0C002DD650 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07736DCA23176B0C002DD650 /* RealmSwift.framework */; };
+		07736DCD23176DAA002DD650 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07736DCC23176DAA002DD650 /* Realm.framework */; };
+		07B3010E2313CE3A001C18D5 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B3010D2313CE3A001C18D5 /* AddViewController.swift */; };
+		07B301102313CE48001C18D5 /* AddViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07B3010F2313CE48001C18D5 /* AddViewController.storyboard */; };
+		07B301122313CE69001C18D5 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B301112313CE69001C18D5 /* DetailViewController.swift */; };
+		07B301142313CE73001C18D5 /* DetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07B301132313CE73001C18D5 /* DetailViewController.storyboard */; };
+		07B301162313CE88001C18D5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B301152313CE88001C18D5 /* HomeViewController.swift */; };
+		07B301182313CE95001C18D5 /* HomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07B301172313CE95001C18D5 /* HomeViewController.storyboard */; };
 		07ED9F6A230E154700B3AEC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07ED9F69230E154700B3AEC6 /* AppDelegate.swift */; };
-		07ED9F6C230E154700B3AEC6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07ED9F6B230E154700B3AEC6 /* ViewController.swift */; };
-		07ED9F6F230E154700B3AEC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07ED9F6D230E154700B3AEC6 /* Main.storyboard */; };
 		07ED9F71230E154800B3AEC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07ED9F70230E154800B3AEC6 /* Assets.xcassets */; };
 		07ED9F74230E154800B3AEC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07ED9F72230E154800B3AEC6 /* LaunchScreen.storyboard */; };
+		07EF7D17231656EE00CBD9B0 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EF7D16231656EE00CBD9B0 /* Task.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		074191F92314E6190070F7AC /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
+		07736DCA23176B0C002DD650 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
+		07736DCC23176DAA002DD650 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
+		07B3010D2313CE3A001C18D5 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		07B3010F2313CE48001C18D5 /* AddViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddViewController.storyboard; sourceTree = "<group>"; };
+		07B301112313CE69001C18D5 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		07B301132313CE73001C18D5 /* DetailViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailViewController.storyboard; sourceTree = "<group>"; };
+		07B301152313CE88001C18D5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		07B301172313CE95001C18D5 /* HomeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeViewController.storyboard; sourceTree = "<group>"; };
 		07ED9F66230E154700B3AEC6 /* TaskSiri.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskSiri.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07ED9F69230E154700B3AEC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		07ED9F6B230E154700B3AEC6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		07ED9F6E230E154700B3AEC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		07ED9F70230E154800B3AEC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07ED9F73230E154800B3AEC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		07ED9F75230E154800B3AEC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07EF7D16231656EE00CBD9B0 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +45,67 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07736DCD23176DAA002DD650 /* Realm.framework in Frameworks */,
+				07736DCB23176B0C002DD650 /* RealmSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		07736DC923176B0C002DD650 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				07736DCC23176DAA002DD650 /* Realm.framework */,
+				07736DCA23176B0C002DD650 /* RealmSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		07B301092313CDEE001C18D5 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				07B3010C2313CE21001C18D5 /* Add */,
+				07B3010B2313CE08001C18D5 /* Detail */,
+				07B3010A2313CDFA001C18D5 /* Home */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		07B3010A2313CDFA001C18D5 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				07B301152313CE88001C18D5 /* HomeViewController.swift */,
+				07B301172313CE95001C18D5 /* HomeViewController.storyboard */,
+				074191F92314E6190070F7AC /* TaskCell.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		07B3010B2313CE08001C18D5 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				07B301112313CE69001C18D5 /* DetailViewController.swift */,
+				07B301132313CE73001C18D5 /* DetailViewController.storyboard */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		07B3010C2313CE21001C18D5 /* Add */ = {
+			isa = PBXGroup;
+			children = (
+				07B3010D2313CE3A001C18D5 /* AddViewController.swift */,
+				07B3010F2313CE48001C18D5 /* AddViewController.storyboard */,
+			);
+			path = Add;
+			sourceTree = "<group>";
+		};
 		07ED9F5D230E154700B3AEC6 = {
 			isa = PBXGroup;
 			children = (
 				07ED9F68230E154700B3AEC6 /* TaskSiri */,
 				07ED9F67230E154700B3AEC6 /* Products */,
+				07736DC923176B0C002DD650 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +120,22 @@
 		07ED9F68230E154700B3AEC6 /* TaskSiri */ = {
 			isa = PBXGroup;
 			children = (
+				07EF7D15231656DF00CBD9B0 /* Models */,
+				07B301092313CDEE001C18D5 /* Scenes */,
 				07ED9F69230E154700B3AEC6 /* AppDelegate.swift */,
-				07ED9F6B230E154700B3AEC6 /* ViewController.swift */,
-				07ED9F6D230E154700B3AEC6 /* Main.storyboard */,
 				07ED9F70230E154800B3AEC6 /* Assets.xcassets */,
 				07ED9F72230E154800B3AEC6 /* LaunchScreen.storyboard */,
 				07ED9F75230E154800B3AEC6 /* Info.plist */,
 			);
 			path = TaskSiri;
+			sourceTree = "<group>";
+		};
+		07EF7D15231656DF00CBD9B0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				07EF7D16231656EE00CBD9B0 /* Task.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +148,7 @@
 				07ED9F62230E154700B3AEC6 /* Sources */,
 				07ED9F63230E154700B3AEC6 /* Frameworks */,
 				07ED9F64230E154700B3AEC6 /* Resources */,
+				07736DCE23176DBE002DD650 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -122,35 +197,55 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07B301182313CE95001C18D5 /* HomeViewController.storyboard in Resources */,
+				07B301142313CE73001C18D5 /* DetailViewController.storyboard in Resources */,
 				07ED9F74230E154800B3AEC6 /* LaunchScreen.storyboard in Resources */,
+				07B301102313CE48001C18D5 /* AddViewController.storyboard in Resources */,
 				07ED9F71230E154800B3AEC6 /* Assets.xcassets in Resources */,
-				07ED9F6F230E154700B3AEC6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		07736DCE23176DBE002DD650 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		07ED9F62230E154700B3AEC6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07ED9F6C230E154700B3AEC6 /* ViewController.swift in Sources */,
+				07B301122313CE69001C18D5 /* DetailViewController.swift in Sources */,
+				07B3010E2313CE3A001C18D5 /* AddViewController.swift in Sources */,
 				07ED9F6A230E154700B3AEC6 /* AppDelegate.swift in Sources */,
+				07B301162313CE88001C18D5 /* HomeViewController.swift in Sources */,
+				07EF7D17231656EE00CBD9B0 /* Task.swift in Sources */,
+				074191FA2314E6190070F7AC /* TaskCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		07ED9F6D230E154700B3AEC6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				07ED9F6E230E154700B3AEC6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		07ED9F72230E154800B3AEC6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -283,6 +378,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z23YQJ49WW;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = TaskSiri/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -300,6 +400,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z23YQJ49WW;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = TaskSiri/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
